@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Its HTML</title>
+  <title>An Introduction to HTML</title>
 </head>
 
+<body>
   <header>
 
-    <h1>This Is HTML</h1>
+    <h1>An Introduction to HTML</h1>
   
   </header>
 
@@ -24,7 +25,6 @@
     When writing HTML, focus on organizing and structuring the content of your website. The appearance and style will come later with CSS.
   </em></p>
 
-<body>
   
   <h2>Setting Up My HTML</h2>
 
@@ -36,15 +36,16 @@
        Also, before starting, it's a good idea to pull the latest updates from the remote repository using git pull to make sure you're working with the most recent version.</p>
  
   <p>
-    I began my new HTML file by typing ! to quickly generate the basic structure.
-     Since my page needs to be semantic, I made sure to use appropriate tags for each section. 
-     In the <head> section, I included a <title>, which defines the title of the page that appears as the tab name in the browser. 
-      I also added a <header>, where I placed the title of my webpage, serving as the main introduction or heading for the page. 
-        The <head> section contains metadata, such as the title and other important information about the page.
-
-      It's important to ensure that there is only one <body> tag in your document, as it wraps all the visible content. 
-        For writing content, I used the <p> tag to write paragraphs of text. This helps keep the document well-organized and easy to read.
-  </p>
+  I began my new HTML file by typing ! to quickly generate the basic structure.
+  Since my page needs to be semantic, I made sure to use appropriate tags for each section.
+  In the <strong><code>&lt;head&gt;</code></strong> section, I included a <strong><code>&lt;title&gt;</code></strong>, which defines the title of the page that appears as the tab name in the browser.
+  I also added a <strong><code>&lt;header&gt;</code></strong>, where I placed the title of my webpage, serving as the main introduction or heading for the page.
+  The <strong><code>&lt;head&gt;</code></strong> section contains metadata, such as the title and other important information about the page.
+  
+  It's important to ensure that there is only one <strong><code>&lt;body&gt;</code></strong> tag in your document, as it wraps all the visible content.
+  For writing content, I used the <strong><code>&lt;p&gt;</code></strong> tag to write paragraphs of text. This helps keep the document well-organized and easy to read.
+</p>
+      
 
   <p>
     The <strong><code>&lt;h1&gt;</code></strong> tag is used for the main title of the webpage. It's like the big title of the page, the most important one. 
@@ -71,7 +72,7 @@
 
   <h3>Putting in an Image</h3>
 
-  <img src="file:///C:/Users/chuacn1/Pictures/Screenshots/Screenshot%202025-02-27%20162808.png" alt="ImagePractice">
+  <img src="https://raw.githubusercontent.com/chuacn1/My90sWebpage/main/Screenshot%202025-02-28%20120713.png" alt="Image">
 
 
 <p>
@@ -79,6 +80,13 @@
   Then, in the <strong><code>src</code></strong> attribute, write the directory path to the image. It's best practice to place your image in a folder within the project you're working on (e.g., an "images" folder) for better organization. 
   After that, just add the image file name in the <strong><code>src</code></strong> and don't forget to include the <strong><code>alt</code></strong> attribute for accessibility, which describes the image in case it doesn't load. 
   For example, it would look something like this: <strong><code>&lt;img src="images/myimage.png" alt="Description of the image"&gt;</code></strong>.
+</p>
+ <p><em> If you are using an image hosted on GitHub or another platform, you need to get the <strong>raw image URL</strong>. 
+  To do this, open the image file in your browser, and in the URL, replace <strong><code>blob</code></strong> with <strong><code>raw</code></strong>. 
+  This provides a direct link to the image that can be used in the <strong><code>src</code></strong> attribute. 
+  For example, if the GitHub URL is <strong><code>https://github.com/user/repo/blob/main/images/myimage.png</code></strong>, 
+  change it to <strong><code>https://raw.githubusercontent.com/user/repo/main/images/myimage.png</code></strong>. 
+  This is important when using images hosted on external platforms, as they need to be served in raw format for proper rendering on your webpage.</em>
 </p>
 
 <h3>Making a List</h3>
@@ -90,7 +98,7 @@
   For example, inside a <strong><code>&lt;ul&gt;</code></strong> or <strong><code>&lt;ol&gt;</code></strong>, you would use <strong><code>&lt;li&gt;</code></strong> to define each item in the list.
 </p>
 
-<img src="file:///C:/Users/chuacn1/Pictures/Screenshots/Screenshot%202025-02-27%20165205.png" alt="ImageOLUL">
+<img src="https://raw.githubusercontent.com/chuacn1/My90sWebpage/main/Screenshot%202025-02-27%20165205.png" alt="List">
 
 
 <h4>Ordered List:</h4>
@@ -118,9 +126,9 @@
   Each row will contain individual data cells, which are created using the <strong><code>&lt;td&gt;</code></strong> tag (short for "table data"). 
   For example, if you want to create a table with two rows and two columns, you would place the <strong><code>&lt;tr&gt;</code></strong> tags to define the rows and the <strong><code>&lt;td&gt;</code></strong> tags inside each row to define the columns. 
   Here’s an example:
-</p
+</p>
 
-<img src="file:///C:/Users/chuacn1/Pictures/Screenshots/Screenshot%202025-02-27%20170532.png" alt="ImageTable">
+<img src="https://raw.githubusercontent.com/chuacn1/My90sWebpage/main/Screenshot%202025-02-27%20170532.png" alt="Table">
 
 <table>
   <tr>
@@ -133,6 +141,46 @@
   </tr>
 </table>
 
+<h3>Advance Text Formatting</h3>
+<ul>
+  <li>
+    This is <strong>bold</strong> text.
+    <p><code>&lt;strong&gt;</code>: Indicates strong emphasis (usually rendered as bold, but has semantic meaning for accessibility and SEO).</p>
+    <p><code>&lt;b&gt;</code>: Used for styling text as bold without any semantic meaning.</p>
+  </li>
+
+  <li>
+    This is <em>italic</em> text.
+    <code>&lt;em&gt;</code>: Indicates emphasized text (typically rendered as italic, but it adds semantic meaning for accessibility).
+    <code>&lt;i&gt;</code>: Used to style text as italic without semantic meaning.
+  </li>
+
+  <li>
+    This is <u>underlined</u> text.
+    <code>&lt;u&gt;</code>: Underlines the text, though it is not widely recommended due to accessibility concerns.
+  </li>
+
+  <li>
+    This text is <span style="text-align: center;">center-aligned</span>.
+    <code>style="text-align: center;"</code>: Used to center-align the text.
+  </li>
+
+  <li>
+    This is <mark>highlighted</mark> text.
+    <code>&lt;mark&gt;</code>: Used to highlight text, often for search results or important information.
+  </li>
+</ul>
+
+<h3>External Links</h3>
+<p>
+  An external link is a hyperlink that points to a page on a different website. 
+  It is created using the <code>&lt;a&gt;</code> tag with an href attribute containing the URL of the other site. </p>
+
+  <p><em>To open the link in a new tab, you can add target="_blank".</em></p>
+  
+<p>
+ Click <em><a href="https://validator.w3.org/nu/">here</a></em> to check your HTML code 
+</p>
 
 </body>
 
