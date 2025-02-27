@@ -1,35 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clarissa's 90s WebPage</title>
-  </head>
-  <body>
-    <header>
-        <h1>Clarissa Nelda Augustina Chua</h1>
-        <article>
-            <h2>Introduction</h2>
-            <p>
-            I have never done web dev before and I am so lost but I think im doing okay. Elise is going through this so fast my head hurts
-            </p>
-            <p>
-            Anyway, I am gonna put some links about me and stuff which is below: 
-            </p>
-          </article>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Its HTML</title>
 
-        <nav>
-          <ul>
-            <li><a href="me.html">About Me</a></li>
-            <li><a href="contact.html">Contacts</a></li>
-            <li> <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a></li>
-   
-              
+  <header>
 
-          </ul>
-        </nav>
-      </header>
+    <h1>This Is HTML</h1>
+  
+  </header>
+
+</head>
+
+<p>This is my HTML webpage. I'm really new to this, so I'm using this site to keep track of my notes and examples as I learn. 
+  It's a fun way to practice and see how everything comes together.
+   I'll keep adding more as I go, and yeah, lol—I'm excited to see how it all turns out! </p>
+
+   <p>
+    <em>Side Note:  Writing HTML is all about the structure of your content. 
+    HTML is used to define the elements of your website, like headings, paragraphs, lists, and images, so that browsers know how to display the content. 
+    It's important to remember that HTML isn’t concerned with how things look—that’s what CSS (Cascading Style Sheets) is for. CSS is where you control the design and layout, such as colors, fonts, and spacing. 
+    When writing HTML, focus on organizing and structuring the content of your website. The appearance and style will come later with CSS.
+  </em></p>
+
+<body>
+  
+  <h2>Setting Up My HTML</h2>
+
+  <p>To get started, you'll need to <strong>the repository from GitHub</strong> to your local machine.
+    You can do this by using the <strong>git clone</strong> command followed by the repository URL.
+    Once you've made changes to your project, remember to commit those changes using <strong>git commit -m "your message"</strong> , and then push them to GitHub with <strong>git push</strong>.
+       This ensures that your updates are saved online and shared with others. 
+       Don’t forget to regularly push your changes to keep your repository up-to-date and prevent losing any progress. 
+       Also, before starting, it's a good idea to pull the latest updates from the remote repository using git pull to make sure you're working with the most recent version.</p>
+ 
+  <p>
+    I started my new HTML file and typed ! to quickly generate the basic structure. 
+    My page needs to be semantic, so I made sure to use appropriate tags for each section. 
+    I included a <strong><code>&lt;title&gt;</code></strong> in the <strong><code>&lt;head&gt;</code></strong> section, which appears as the tab name in the browser. 
+    In the <strong><code>&lt;header&gt;</code></strong>, I added the title of my webpage, which serves as the main introduction or heading for the page. 
+    The <strong><code>&lt;head&gt;</code></strong> section holds metadata about the page, like the title and other important information. 
+    For writing content, I used a <strong><code>&lt;p&gt;</code></strong> tag, which is where you write paragraphs of text. 
+  </p>
+
+  <p>
+    The <strong><code>&lt;h1&gt;</code></strong> tag is used for the main title of the webpage. It's like the big title of the page, the most important one. 
+    The <strong><code>&lt;h2&gt;</code></strong> tag is for the setup, kind of like the introduction or the preparation before the main content starts. 
+    The <strong><code>&lt;h3&gt;</code></strong> tag is for even smaller headings within a section, like a subsection or a part of the chapter.
+  </p>
+
+  <p>
+    If you right-click on the page and click on <strong>"Inspect,"</strong> you can check out the code behind the webpage. This will show you the HTML structure and how all the elements are organized in the browser.
+  </p>
 
 
-  </body>
+  <h2>HTML Class Lab</h2>
+
+  <p>Now, this is my class lab, and our task is to work with several key HTML elements which are:</p>
+
+  <ul>
+    <li>image</li>
+    <li>lists</li>
+    <li>tables</li>
+    <li>advance text formatting</li>
+    <li>external links</li>
+  </ul>
+
+  <h3>Putting in an Image</h3>
+
+<img src="c:\Users\chuacn1\Pictures\Screenshots\Screenshot 2025-02-27 162808.png" alt="ImagePractice">
+
+<p>
+  To add an image to your webpage, simply type <strong><code>&lt;img&gt;</code></strong> and hit the Tab key to generate the tag quickly. 
+  Then, in the <strong><code>src</code></strong> attribute, write the directory path to the image. It's best practice to place your image in a folder within the project you're working on (e.g., an "images" folder) for better organization. 
+  After that, just add the image file name in the <strong><code>src</code></strong> and don't forget to include the <strong><code>alt</code></strong> attribute for accessibility, which describes the image in case it doesn't load. 
+  For example, it would look something like this: <strong><code>&lt;img src="images/myimage.png" alt="Description of the image"&gt;</code></strong>.
+</p>
+
+<h3>Making a List</h3>
+
+<p>
+  When making a list in HTML, there are two main types: <strong><code>&lt;ul&gt;</code></strong> and <strong><code>&lt;ol&gt;</code></strong>.
+  An unordered list is used when the order doesn't matter and typically uses bullet points, while an ordered list is for when the sequence is important and numbers are used. 
+  Both types of lists contain list items, which are created with the <strong><code>&lt;li&gt;</code></strong> tag. 
+  For example, inside a <strong><code>&lt;ul&gt;</code></strong> or <strong><code>&lt;ol&gt;</code></strong>, you would use <strong><code>&lt;li&gt;</code></strong> to define each item in the list.
+</p>
+
+<img src="c:\Users\chuacn1\Pictures\Screenshots\Screenshot 2025-02-27 165205.png" alt="ImageOLUL">
+
+
+<h4>Ordered List:</h4>
+<code>
+  <ol>
+    <li>First step</li>
+    <li>Second step</li>
+    <li>Third step</li>
+    <li>Fourth step</li>
+  </ol>
+</code>
+
+<h4>Unordered List:</h4>
+<code>
+  <ul>
+    <li>image</li>
+    <li>lists</li>
+    <li>tables</li>
+    <li>advance text formatting</li>
+    <li>external links</li>
+  </ul>  
+</code>
+
+<h3>Making a Table</h3>
+
+<p>
+  To create a table in HTML, you start with the <strong><code>&lt;table&gt;</code></strong> tag. 
+  Inside the <strong><code>&lt;table&gt;</code></strong>, you use the <strong><code>&lt;tr&gt;</code></strong> tag to define each table row. 
+  Each row will contain individual data cells, which are created using the <strong><code>&lt;td&gt;</code></strong> tag (short for "table data"). 
+  For example, if you want to create a table with two rows and two columns, you would place the <strong><code>&lt;tr&gt;</code></strong> tags to define the rows and the <strong><code>&lt;td&gt;</code></strong> tags inside each row to define the columns. 
+  Here’s an example:
+</p
+
+<img src="c:\Users\chuacn1\Pictures\Screenshots\Screenshot 2025-02-27 170532.png" alt="ImageTable">
+
+<table>
+  <tr>
+    <td>Cell 1</td>
+    <td>Cell 2</td>
+  </tr>
+  <tr>
+    <td>Cell 3</td>
+    <td>Cell 4</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
