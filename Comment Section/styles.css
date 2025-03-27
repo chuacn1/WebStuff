@@ -1,0 +1,24 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    max-width: 50vw;
+    margin: 0 auto;
+}
+label {
+    margin-top: 0.5em;
+}
+
+#comment-section {
+
+    margin-top: 1em;
+    border: 1px solid #333;
+    background-color: #ccc;
+
+}
+
