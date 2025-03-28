@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> 
+    <title>Weather</title>
 </head>
 <body>
+
+    <div class="rain-container"></div> 
+    <div class="content">
+
+    <p id="time"></p>
     
+
+        <div class = "dayte">
+            <p id="day">Day:</p>
+            <p id="date">Date:</p>
+        </div>
+
+        <div class="container">
+        <div>
+            <p id="location">Dunedin, NZ</p>
+
+            <div class = currentcontainer>
+                <img src="rainy-day.png" alt="rain">
+                <p id="current">17</p>
+                <button id="degree" >°C</button>
+            </div>
+
+                <div class="hilow">              
+                <p id = "l">L: 16 </p>
+                <p id = "h">H: 18 </p>
+            </div>  
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
