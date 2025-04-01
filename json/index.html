@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Our superheroes</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+
+      <header>
+
+      </header>
+
+      <section>
+
+      </section>
+
+      <script>
+        async function fetchHeroes() {
+            const url = "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json";
+            const response = await fetch(url);
+            const superHeroes = await response.json();
+            displayHeroes(superHeroes);
+        }
+
+        function displayHeroes(data){
+            //Make an h1 for the team name
+            document.querySelector("header").innerHTML = `
+            <h1>${data.squadName}</h1>
+            <p>${data.homeTown} ${data.secretBase} ${data.formed}</p>
+            `
+
+            //Loop over the heroes (and their powers)
+            const heroesContainer = document.querySelector("section");
+            for (hero of data.members){
+                const myHero = `
+                <h2>${hero.name}</h2>
+                <p>Secret identity: ${hero.secretIdentity}</p>
+                <p>Age: ${hero.age}</p>
+                <ul>${hero.powers.map(power => `<li>${power}</li>`).join("")}</ul>
+                `;
+                heroesContainer.innerHTML += myHero;
+            }
+        }
+        fetchHeroes();
+      </script>
+  </body>
+</html>
