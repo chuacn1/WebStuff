@@ -1,0 +1,129 @@
+@font-face {
+    font-family: retro;
+    src: url('font.ttf');
+   }
+
+body {
+  background-color: rgba(0, 0, 0, 0.438);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: retro;
+    text-transform: uppercase;
+    font-size: 200px;
+    color: yellow;
+    text-shadow:  
+    -3px -3px 0 rgb(0, 0, 0),
+    3px -3px 0  rgb(0, 0, 0),
+    -3px 3px 0  rgb(0, 0, 0),
+    3px 3px 0  rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+}
+
+#bgbox{
+    border: 0;
+    border-radius: 5em;
+    width: 1000px;
+    height: 650px;
+    background-color: rgba(255, 255, 255, 0.581);
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+
+@keyframes textchange {
+    0%{
+        color: rgb(208, 103, 129);
+    }
+    25% {
+        color:  rgb(184, 184, 90);  
+    }
+    50% {
+        color: rgb(108, 182, 178);  
+    }
+
+    75% {
+        color: rgb(113, 97, 198) ;
+    }
+    100% {
+        color: rgb(255, 85, 0);  
+    }
+}
+
+#select{
+    background-color: rgba(165, 42, 42, 0);
+
+    border-radius: 0.1em;
+    height: 45px;
+    padding-left: 6px;
+
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+
+    font-family: retro;
+    font-size: 40px;
+    text-align: center;
+    animation: textchange 5s infinite;
+
+}
+
+
+@keyframes float {
+    0%, 100% { 
+        transform: translate(-50%, calc(-50% - 0px)); 
+    }
+    50% { 
+        transform: translate(-50%, calc(-50% - 10px)); 
+    }
+}
+
+#pokemonDetail img {
+    image-rendering: pixelated;
+    position: absolute;
+    left: 60%;
+    top: 55%;
+    width: 450px;
+    height: 450px;
+    animation: 
+    statFadeIn 0.5s ease-out forwards,
+    float 3s ease-in-out infinite;
+    
+    animation-delay: calc(var(--order) * 0.1s), 0s;
+}
+
+@keyframes statFadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.pokemonStats{
+    font-family: retro;
+    font-size: 35px;
+    text-transform: uppercase;
+
+
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+    animation: statFadeIn 0.5s ease-out forwards;
+    animation-delay: calc(var(--order) * 0.1s);
+}
